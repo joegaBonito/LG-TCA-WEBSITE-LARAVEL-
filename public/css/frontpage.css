@@ -1,0 +1,75 @@
+.carousel-inner {
+    width: 100%;
+    padding-bottom: 0%
+}
+
+.active {
+    width: 100%;
+    padding-bottom: 0%
+}
+
+#banner1 {
+    height:415px;
+    background-image: url("/img/m1.jpg");
+}
+
+#banner1 div {
+    color: #FFF;
+    position: relative;
+    left:70%;
+    top: 100px;
+    width:200px;
+    display:inline-block;
+}
+
+#banner2 {
+    height: 415px;
+    background-image: url("/img/m2.jpg");
+}
+
+#banner2  div {
+    color: #333333;
+    position: relative;
+    left: 20%;
+    top: 100px;
+    display:inline-block;
+}
+
+#banner3 {
+    height: 415px;
+    background-image: url("/img/m3.jpg");
+    text-align: center;
+}
+
+#banner3  div {
+    color: #FFF;
+    position: relative;
+    top: 100px;
+    display:inline-block;
+}
+
+#button1,
+#button3 {
+    color: #fff;
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+#button1:hover,
+#button3:hover {
+    color: #333333;
+    background-color: #fff;
+    border-color: #FFF;
+}
+
+#button2 {
+    color: #333333;
+    background-color: transparent;
+    border-color: #333333;
+}
+
+#button2:hover {
+    color: #ffffff;
+    background-color: #333333;
+    border-color: #333333;
+}
