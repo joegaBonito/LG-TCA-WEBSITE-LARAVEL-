@@ -22,12 +22,12 @@ Route::get('/', function()
 
 Route::get('/Innovation', function () {
     return view('layouts/Innovation');
-});
+})->name("Innovation");
 
 Route::get('/ContactUs', function () {
     return view('layouts/ContactUs');
-});
+})->name("ContactUs");
 
 Route::get('/Newsroom', function () {
     return view('layouts/Newsroom');
-});
+})->name("Newsroom");

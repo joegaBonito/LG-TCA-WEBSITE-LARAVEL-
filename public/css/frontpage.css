@@ -9,8 +9,10 @@
 }
 
 #banner1 {
-    height:415px;
+    width: 100%;
+    padding-bottom: 17%;
     background-image: url("/img/m1.jpg");
+    background-size: auto;
 }
 
 #banner1 div {
@@ -23,8 +25,10 @@
 }
 
 #banner2 {
-    height: 415px;
+    width:100%;
+    padding-bottom:18%;
     background-image: url("/img/m2.jpg");
+    background-size: auto;
 }
 
 #banner2  div {
@@ -36,9 +40,11 @@
 }
 
 #banner3 {
-    height: 415px;
+    width:100%;
+    padding-bottom:22%;
     background-image: url("/img/m3.jpg");
     text-align: center;
+    background-size: auto;
 }
 
 #banner3  div {
