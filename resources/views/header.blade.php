@@ -7,7 +7,6 @@
     <title>Joe's Website</title>
     <!-- <link rel="stylesheet" href="css/foundation.css"> -->
     <link rel="stylesheet" href="{{URL::asset('https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{URL::asset("/css/flickity.css")}}" media="screen">
     <link rel="stylesheet" href="{{URL::asset('/css/app.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/css/innovation.css')}}">
     <link rel="stylesheet" href="{{URL::asset('/css/newsroom.css')}}">
@@ -38,9 +37,9 @@
                             <li><a href="#">One more separated link</a></li>
                         </ul>
                     </li>
-                    <li><a href="/Innovation" id="innovation">Innovation</a></li>
-                    <li><a href="/Newsroom" id="newsroom">Newsroom</a></li>
-                    <li><a href="/ContactUs" id="contactus">Contact Us</a></li>
+                    <li><a href="{{route('Innovation')}}" id="innovation">Innovation</a></li>
+                    <li><a href="{{route('Newsroom')}}" id="newsroom">Newsroom</a></li>
+                    <li><a href="{{route('ContactUs')}}" id="contactus">Contact Us</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->

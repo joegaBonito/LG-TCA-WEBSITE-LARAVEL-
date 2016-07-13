@@ -11,23 +11,31 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/master');
+Route::group(['middleware' => ['web']], function () {
+    Route::get('/', [
+        'uses' => 'PageController@index',
+        'as' => 'home'
+    ]);
+    Route::get('/Innovation', [
+        'uses' => 'PageController@Innovation',
+        'as' => 'Innovation'
+    ]);
+    Route::get('/Newsroom', [
+        'uses' => 'PageController@Newsroom',
+        'as' => 'Newsroom'
+    ]);
+    Route::get('/ContactUs', [
+        'uses' => 'PageController@ContactUs',
+        'as' => 'ContactUs'
+    ]);
 });
 
-Route::get('/', function()
-{
-    return View::make('content');
+Route::group(['middleware' => ['web']], function () {
+    Route::get('/', [
+    'uses' => 'ViewController@view',
+    ]);
 });
 
-Route::get('/Innovation', function () {
-    return view('layouts/Innovation');
-})->name("Innovation");
 
-Route::get('/ContactUs', function () {
-    return view('layouts/ContactUs');
-})->name("ContactUs");
 
-Route::get('/Newsroom', function () {
-    return view('layouts/Newsroom');
-})->name("Newsroom");
+
